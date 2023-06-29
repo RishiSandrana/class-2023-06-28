@@ -31,6 +31,10 @@ library(tidyverse)
 library(primer.data)
 ```
 
+ATE = Treatment - Control
+
 ```{r}
-trains
+trains |>
+  select(treatment, att_start, att_end) |>
+  summarize(mean_att_end = mean(att_end), .by = treatment)
 ```
