@@ -7,6 +7,8 @@ editor: visual
 ## Question
 What is the average causal effect of hearing Spanish on attitudes toward immigration among students in this class? 
 
+Population: Every student in this class
+
 Units: Students
 Treatments: Hearing Spanish
 Outcomes: Attitude Toward Immigration (Scale from 1-10)
@@ -14,7 +16,13 @@ Outcomes: Attitude Toward Immigration (Scale from 1-10)
 Preceptor Table:
 -Rows: Students
 -Columns: Treatment, Attitude Prior, Attitude After
--Covariates: Gender, Age
+-Covariates: Gender, Age, Party
+
+Experimental Procedure:
+Survey, randomly choose treatment
+- double blind design experiment
+- Large Group setting might be different with individual setting
+- Arguing is different than singing
 
 ```{r}
 #| echo: false
