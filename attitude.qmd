@@ -1,0 +1,28 @@
+---
+title: "Immigration Attitudes"
+format: html
+editor: visual
+---
+
+## Question
+What is the average causal effect of hearing Spanish on attitudes toward immigration among students in this class? 
+
+Units: Students
+Treatments: Hearing Spanish
+Outcomes: Attitude Toward Immigration (Scale from 1-10)
+
+Preceptor Table:
+-Rows: Students
+-Columns: Treatment, Attitude Prior, Attitude After
+-Covariates: Gender, Age
+
+```{r}
+#| echo: false
+#| message: false
+library(tidyverse)
+library(primer.data)
+```
+
+```{r}
+trains
+```
